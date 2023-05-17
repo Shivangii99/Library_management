@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="libs.css">
+    <script src="https://kit.fontawesome.com/6a85e5d1d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="header-text">
+        <img src="lib2.png" class="bgimage">
+        <div class="center">
+            <h1>Welcome to <span>Online Library</span></h1>
+            <p>Rajkiya Engineering College Sonbhadra</p>
+        </div>
+        </div>
+        <div class="container">
+            <nav>
+                <img src='rajkiya_logo.png' class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">LIST OF BOOKS</a></li>
+                    <li><a href="#">REGISTER NOW / LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="row tab-titles">
+            <p class="tab-links active-link" onclick="opentab('about')">ABOUT</p>
+            <p class="tab-links" onclick="opentab('mission')">MISSION</p>
+            <p class="tab-links" onclick="opentab('vision')">VISION</p>
+        </div>
+        <div class="tab-contents active-tab" id="about">
+            <p>A library management system is software that is designed to manage all the functions of a library. It helps librarian to maintain the database of new books and the books that are borrowed by members along with their due dates. This system completely automates all your library's activities.</p>
+
+        </div>
+        <div class="tab-contents" id="mission">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi omnis, a quas sapiente in earum officiis aliquid alias? Ullam ipsa sequi fuga necessitatibus, atque, libero illum consequuntur illo qui magnam culpa dolorem aliquid excepturi maxime debitis expedita id veniam non aliquam? Esse veniam hic reprehenderit accusantium magnam debitis dolores ducimus?</p>
+        </div>
+        <div class="tab-contents" id="vision">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam natus fugiat nam iste aperiam corporis dolores facilis sapiente recusandae. Eos pariatur ratione provident sed quam eligendi dolorum reiciendis, ipsa autem ab laborum labore facilis, fuga laboriosam tempora ad rerum natus?</p>
+        </div>
+    </div>
+
+    <!--  ------------services------------ -->
+    <div id="services">
+        <div class="container1">
+            <div class="sub-titles"><h1>List of Books</h1></div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-flask"></i>
+                    <h4>Applied Science Department</h4>
+                    <p>productive and suggested books for almost all the subjects and topics are available under this </p>
+                    <a href="#">Click here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h4>Computer Science and Engineering Department</h4>
+                    <p>productive and suggested books for almost all the subjects and topics are available under this </p>
+                    <a href="#">Click here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h4>Electronics Engineering Department</h4>
+                    <p>productive and suggested books for almost all the subjects and topics are available under this </p>
+                    <a href="#">Click here</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-microchip"></i>
+                    <h4>Electrical Engineering Department</h4>
+                    <p>productive and suggested books for almost all the subjects and topics are available under this </p>
+                    <a href="#">Click here</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book-open"></i>
+                    <h4>Other Co-Cirricular</h4>
+                    <p>productive and suggested books for almost all the subjects and topics are available under this </p>
+                    <a href="#">Click here</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-------------contacts--------->
+
+    <div id="contact">
+        <div class="container1">
+            <div class="rows">
+                <div class="contact-left">
+                    <div class="sub-titles"><h1>Contact Us</h1></div>
+                    <p>recsonlibrary@gmail.com</p>
+                    <p>0522-808080</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="register">
+                    <div><h1 class="head" onclick="myFunction('register')">Register Now</h1></div>
+                    <form id="register" action="/register" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="password" name="password" placeholder="New Password" required>
+                        <button type="submit" class="btn btn2">Submit</button><br><br>
+                    </form>
+
+                    </div>
+                    <div class="login">
+                    <div><h1 class="head" onclick="myFunction('login')">LOGIN</h1></div>
+                    <form id="login">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <br>
+                        <span><input type="checkbox" checked="checked" name="remember">Remember Me</span>
+                        <br>
+                        <button type="submit" class="btn btn2">Submit</button><br>
+                        <a href="#" class="btn btn2" download>Download Virtual Library Card</a>
+                    </form>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ REC Sonbhadra. Made by Shivangi</p>
+        </div>
+    </div>
+
+
+<script src="lib.js" charset="UTF-8"></script>
+    
+</body>
+</html>
